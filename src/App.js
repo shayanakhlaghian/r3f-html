@@ -25,7 +25,7 @@ function Model(props) {
           <mesh material={materials['matte.001']} geometry={nodes['Cube008_1'].geometry} />
           <mesh geometry={nodes['Cube008_2'].geometry} position={[0, 0, 0]}>
             {/* Drei's HTML component can "hide behind" canvas geometry */}
-            <Html className="content" rotation-x={-Math.PI / 2} position={[0, 0.05, -0.09]} transform occlude distanceFactor={4}>
+            <Html className="content" rotation-x={-Math.PI / 2} position={[0, 0.05, -0.09]} transform occlude>
               <div className="wrapper" onPointerDown={(e) => e.stopPropagation()}>
                 {/* <HeroPage /> */}
                 <iframe src="https://os.mehanet.com?building=website" className="iframe" />
